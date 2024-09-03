@@ -1,6 +1,6 @@
 @if (tarif() !== null){
   <div class="w-11/12 m-auto pt-8 pb-8 grid gap-10">
-    <div class="bg-white shadow-2xl w-max p-6 rounded grid items-center justify-center">
+    <div class="bg-white shadow-2xl w-max p-6 sm:m-auto md:m-0 rounded grid items-center justify-center">
       <div  class="flex justify-center">
         <img [ngSrc]="tarif()!.provider.logoImg!" priority width="80" height="80"  [alt]="tarif()!.provider.legalName!">
       </div>
@@ -31,7 +31,7 @@
         <p class="text-center">{{tarif()!.prices.monthly}} <span class="text-green-500">{{tarif()!.prices.savingsPercent}} %</span></p>
       </div>
     </div>
-    <div class="grid gap-3">
+    <div class="grid gap-3 sm:justify-center md:justify-start">
       <h2 class="pr-20 pl-20 bg-white shadow-2xl w-max text-bs-primary p-2 text-2xl">Benefits</h2>
       <ul class="flex flex-col">
         @for(remark of tarif()!.remarks; track remark.header.length){
