@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { FilterIcoComponent } from './filter-ico.component';
+import {FilterIcoComponent} from './filter-ico.component';
 
 describe('FilterIcoComponent', () => {
   let component: FilterIcoComponent;

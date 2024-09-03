@@ -1,4 +1,4 @@
-import { HttpInterceptorFn } from '@angular/common/http';
+import {HttpInterceptorFn} from '@angular/common/http';
 
 export const tariffInterceptor: HttpInterceptorFn = (req, next) => {
   const newReq = req.clone({

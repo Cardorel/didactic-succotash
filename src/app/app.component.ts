@@ -1,5 +1,5 @@
 import {Component, inject, OnInit} from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {RouterOutlet} from '@angular/router';
 import {HeaderComponent} from "./components/header/header.component";
 import {TarifListComponent} from "./components/tarif-list/tarif-list.component";
 import {FilterComponent} from "./components/filter/filter.component";

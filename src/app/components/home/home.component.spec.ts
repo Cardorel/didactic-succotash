@@ -5,7 +5,6 @@ import {Store} from "@ngrx/store";
 import {provideMockStore} from "@ngrx/store/testing";
 import {selectTarifs} from "../../store/reducers/tarif.store";
 import mockTarifs from "../../constants/mockTarif";
-import {tarifGroupAction} from "../../store/actions/tarif.action";
 import {ActivatedRoute} from "@angular/router";
 import {of} from "rxjs";
 

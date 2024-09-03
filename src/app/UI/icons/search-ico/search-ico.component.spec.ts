@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { SearchIcoComponent } from './search-ico.component';
+import {SearchIcoComponent} from './search-ico.component';
 
 describe('SearchIcoComponent', () => {
   let component: SearchIcoComponent;

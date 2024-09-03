@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { TariffService } from './tariff.service';
+import {TariffService} from './tariff.service';
 import mockTarifs from "../../constants/mockTarif";
 import {HttpClientTestingModule, HttpTestingController} from "@angular/common/http/testing";
 import {TarifInterface} from "../../interfaces/tariff.interface";
