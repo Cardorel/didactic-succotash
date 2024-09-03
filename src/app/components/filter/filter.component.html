@@ -1,0 +1,54 @@
+<div
+  (click)="closeModal()"
+  [ngClass]="{'hidden': !isOpen(), 'block': isOpen()}"
+  class="sm:fixed sm:p-4 sm:inset-0 lg:flex sm:items-center sm:justify-center lg:sticky z-50 lg:top-10 rounded lg:w-[250px] sm:w-full sm:bg-bs-modal lg:bg-transparent">
+  <div class="bg-white p-4 w-full shadow-2xl">
+    <p class="uppercase text-bs-primary text-center font-bold">filter by</p>
+    <div class="grid gap-10 mt-4">
+      <div class="grid gap-2">
+        <p class="bg-gray-400 p-2 rounded text-white font-medium">Price</p>
+        <div class="grid gap-3">
+          <label for="priceMin" class="flex gap-2">
+            <input id="priceMin" name="tarif" type="radio" (click)="sortByCheaperPrice('cheap')"/>
+            Cheap
+          </label>
+          <label for="priceMax" class="flex gap-2">
+            <input id="priceMax" name="tarif" type="radio" (click)="sortByExpensivePrice('expensive')"/>
+            Expensive
+          </label>
+        </div>
+      </div>
+      <div class="grid gap-2">
+        <p class="bg-gray-400 p-2 rounded text-white font-medium">Speed</p>
+        <div class="grid gap-1">
+          <label for="download" class="flex gap-2" (click)="sortByMaxDownloadSpeed()">
+            <input id="download" type="radio" name="speed"/>
+            Download
+          </label>
+          <label for="upload" class="flex gap-2" (click)="sortByMaxUploadSpeed()">
+            <input id="upload" type="radio" name="speed"/>
+            Upload
+          </label>
+        </div>
+      </div>
+      <div class="grid gap-2">
+        <p class="bg-gray-400 p-2 rounded text-white font-medium">Name</p>
+        <div class="grid gap-1">
+          <label for="asc" class="flex gap-2">
+            <input id="asc" (click)="sortByNameAsc('asc')" name="tarif" type="radio" />
+            Desc
+          </label>
+          <label for="desc" class="flex gap-2">
+            <input id="desc" (click)="sortByNameDesc('desc')" name="tarif" type="radio" />
+            Asc
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="sm:grid sm:justify-end lg:hidden">
+  <button (click)="handleOpenInMobile()">
+    <app-filter-ico></app-filter-ico>
+  </button>
+</div>

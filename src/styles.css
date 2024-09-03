@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .item-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 3rem;
+  }
+
+  .col-2-1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .rotate-arrow{
+    transform: rotate(180deg);
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 2rem;
+  }
+
+  @media (max-width: 768px){
+    .container{
+      grid-template-columns: 1fr;
+      max-width: 100% !important;
+      gap: 1rem;
+    }
+
+  }
+
+  @media (width <= 1219px){
+    .item-container {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+    }
+  }
+}

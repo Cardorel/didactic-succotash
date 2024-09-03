@@ -1,0 +1,9 @@
+<div class="grid gap-4">
+  @if(tarifs().length > 0){
+    <app-tarif-item *ngFor="let tarif of tarifs(); let index = index" [tarif]="tarif" [index]="index"> </app-tarif-item>
+  }@else{
+    <div class="flex justify-center items-center">
+      <p class="text-center text-2xl">No tarifs found :(</p>
+    </div>
+  }
+</div>
