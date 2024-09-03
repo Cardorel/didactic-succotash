@@ -9,7 +9,7 @@
         <p
           class="font-medium">
           {{tarif()!.provider.city}} |
-          {{tarif()!.provider.street}} str {{tarif()!.provider?.houseNumber}}, {{tarif()!.provider.postalCode}}</p>
+          {{tarif()!.provider.street}} str {{tarif()!.provider!.houseNumber}}, {{tarif()!.provider.postalCode}}</p>
         <p class="text-center font-bold">{{tarif()!.provider.telephone}}</p>
       </div>
     </div>
@@ -20,7 +20,7 @@
       </div>
       <div class="grid gap-3">
         <p class="bg-bs-primary shadow-2xl p-2 pr-20 pl-20 text-center text-white rounded">Download</p>
-        <p class="text-center">{{tarif()!.internetSpeed?.download}} <span>{{tarif()!.internetSpeed.downloadSpeedUnit}}</span></p>
+        <p class="text-center">{{tarif()!.internetSpeed!.download}} <span>{{tarif()!.internetSpeed.downloadSpeedUnit}}</span></p>
       </div>
       <div class="grid gap-3">
         <p class="bg-bs-primary shadow-2xl p-2 pr-20 pl-20 text-center text-white rounded">Uploads</p>
