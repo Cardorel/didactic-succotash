@@ -8,19 +8,19 @@
         <h2 class="text-center text-bs-primary text-2xl">{{tarif()!.provider.legalName}}</h2>
         <p
           class="font-medium">
-          {{tarif()?.provider?.city}} |
-          {{tarif()?.provider?.street}} str {{tarif()?.provider?.houseNumber}}, {{tarif()?.provider?.postalCode}}</p>
-        <p class="text-center font-bold">{{tarif()?.provider?.telephone}}</p>
+          {{tarif()!.provider.city}} |
+          {{tarif()!.provider.street}} str {{tarif()!.provider?.houseNumber}}, {{tarif()!.provider.postalCode}}</p>
+        <p class="text-center font-bold">{{tarif()!.provider.telephone}}</p>
       </div>
     </div>
     <div class="flex justify-around flex-wrap gap-6">
       <div class="grid gap-3">
         <p class="bg-bs-primary shadow-2xl p-2 pr-20 pl-20 text-center text-white rounded">Tarif name</p>
-        <p class="text-center">{{tarif()?.productShortName}}</p>
+        <p class="text-center">{{tarif()!.productShortName}}</p>
       </div>
       <div class="grid gap-3">
         <p class="bg-bs-primary shadow-2xl p-2 pr-20 pl-20 text-center text-white rounded">Download</p>
-        <p class="text-center">{{tarif()?.internetSpeed?.download}} <span>{{tarif()!.internetSpeed.downloadSpeedUnit}}</span></p>
+        <p class="text-center">{{tarif()!.internetSpeed?.download}} <span>{{tarif()!.internetSpeed.downloadSpeedUnit}}</span></p>
       </div>
       <div class="grid gap-3">
         <p class="bg-bs-primary shadow-2xl p-2 pr-20 pl-20 text-center text-white rounded">Uploads</p>
