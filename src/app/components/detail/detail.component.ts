@@ -6,6 +6,7 @@ import {ActivatedRoute} from "@angular/router";
 import {NgIf, NgOptimizedImage} from "@angular/common";
 import {TarifInterface} from "../../interfaces/tariff.interface";
 import {SpinnerComponent} from "../spinner/spinner.component";
+import {DetailItemContentComponent} from "../../UI/shared/detail-item-content/detail-item-content.component";
 
 @Component({
   selector: 'app-detail',
@@ -13,7 +14,8 @@ import {SpinnerComponent} from "../spinner/spinner.component";
   imports: [
     NgOptimizedImage,
     SpinnerComponent,
-    NgIf
+    NgIf,
+    DetailItemContentComponent
   ],
   templateUrl: './detail.component.html',
   styleUrl: './detail.component.css'
